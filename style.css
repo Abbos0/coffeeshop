@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  body{
+    background-color: black;
+  }
+  .header{
+    position: relative;
+    min-height: 100vh;
+  }
+  nav{
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 50px;
+    height: 80px;
+    border-bottom: 1px solid rgb(211, 206, 206);
+  }
+  .logo img{
+    width: 90%;
+    cursor: pointer;
+  }
+  
+  .lists ul{
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+  }
+  .lists ul li a{
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+    position: relative;
+  
+  }
+  .lists ul li a:hover{
+    color: #d3ad7f;
+  }
+  .lists ul li a::after{
+    content: " ";
+    position: absolute;
+    transition: 0.3s;
+    width: 100%;
+    height: 0px;
+    left: 0;
+    bottom: 3px;
+    background-color:#d3ad7f ;
+  
+  }
+  .lists ul li{
+    overflow: hidden;
+  }
+  .lists ul li a:hover::after{
+    bottom: -4px;
+    height: 1.5px;
+    overflow-y: hidden;
+  
+  }
+  #bar{
+    color: white;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+  }
+  .toggle{
+    right: 0;
+  }
+  
+  
+  
+  
+  
+  .header-text{
+    width: 100%;
+    height: calc(100vh - 80px);
+    color: white;
+    background-image: url("../images/home-img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+  }
+  .in-text{
+    max-width: 600px;
+    width: 100%;
+  }
+  .header-text h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+  .header-text p{
+    margin: 40px 0px 20px 0px;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+  }
+  button{
+    border: none;
+    background-color: #d3ad7f;
+    color: white;
+    padding: 14px 30px;
+    text-transform: capitalize;
+    transition: 0.3s;
+  }
+  button:hover{
+    letter-spacing: 3px;
+  }
+  
+  @media screen and (max-width:912px) {
+    #bar{
+        color: white;
+        font-size: 25px;
+        display: block;
+    }
+    .lists{
+        position: absolute;
+        z-index: 1;
+        transition: 0.3s;
+        top: 80px;
+        right: -100%;
+        max-width: 450px;
+        width: 100%;
+    }
+    .toggle{
+        right: 0;
+    }
+    .lists ul{
+        padding: 40px;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .lists ul li a{
+        color: black;
+    }
+    .in-text{
+        position: absolute;
+        padding: 0px 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+  }
+  
+  /* about ------------------------------- */
+  .about{
+    padding: 50px 50px;
+  }
+  
+  .title{
+    font-size: 40px;
+    color: #d3ad7f;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .title span:nth-child(2){
+    color: white;
+  
+  }
+  
+  
+  .about-card{
+    background-color: #13131a;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .about-img{
+    width: 50%;
+  }
+  .about-text{
+    width: 50%;
+    padding: 40px;
+  
+  }
+  .about-text h1{
+    font-size: 30px;
+  }
+  
+  .about-text p{
+    margin: 40px 0px;
+    line-height: 30px;
+  }
+  
+  /* about ------------------------------- */
+  .about{
+    padding: 50px 50px;
+  }
+  
+  .title{
+    font-size: 40px;
+    color: #d3ad7f;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .title span:nth-child(2){
+    color: white;
+  
+  }
+  
+  
+  .about-card{
+    background-color: #13131a;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .about-img{
+    width: 50%;
+  }
+  .about-text{
+    width: 50%;
+    padding: 40px;
+  
+  }
+  .about-text h1{
+    font-size: 30px;
+  }
+  
+  .about-text p{
+    margin: 40px 0px;
+    line-height: 30px;
+  }
+  
+  /* about ------------------------------- */
+  .about{
+    padding: 50px 50px;
+  }
+  
+  .title{
+    font-size: 40px;
+    color: #d3ad7f;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .title span:nth-child(2){
+    color: white;
+  
+  }
+  
+  
+  .about-card{
+    background-color: #13131a;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .about-img{
+    width: 50%;
+  }
+  .about-text{
+    width: 50%;
+    padding: 40px;
+  
+  }
+  .about-text h1{
+    font-size: 30px;
+  }
+  
+  .about-text p{
+    margin: 40px 0px;
+    line-height: 30px;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .about-card{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
+        padding: 30px;
+    }
+  }
+  
+  /* about section  */
+  
+  /* about section  */
+  
+  /* about section  */
+  
+  /* our menu page  */
+  .menu .title span:nth-child(1){
+    color: white;
+  }
+  .menu .title span:nth-child(2){
+    color: #d3ad7f;
+  }
+  .menu-cards{
+    padding: 20px 40px;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+  
+  
+  .menu-cards .card{
+    border: 1px solid white;
+    width: 300px;
+    color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .card img{
+    width: 80px;
+  }
+  #coffee-name{
+    font-size: 25px;
+  }
+  #coffee-cost{
+    font-size: 14px;
+    padding: 0px 4px;
+  
+  }
+  #coffee-cost strike{
+    font-style: italic;
+    font-weight: 100;
+    text-decoration-line: line-through;
+  }
+  .menu-cards .card:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  
+  /* our menu page  */
+  
+  
+  
+  
+  /* header page end  */
