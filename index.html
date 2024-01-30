@@ -268,24 +268,24 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1542.3210483023731!2d65.79584064415826!3d38.837459448226035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ea63944a8e4c1%3A0x694369ac2037509d!2sQarshi%2C%20O%60zbekiston!5e1!3m2!1suz!2s!4v1700770216026!5m2!1suz!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
        
-        <div class="form" ">
+        <div class="form" id="form">
             <h1 class="form-title"> Get In Touch</h1>
             <form >
                 <div class="input-box">
                     <span class="fa fa-user"></span>
-                    <input type="text" class="name" placeholder="Name" required >
+                    <input type="text" class="name" placeholder="Name" required  id="username">
                 </div>
                 <div class="input-box">
                     <span class="fa fa-envelope"></span>
-                    <input type="email" class="email" placeholder="Email" required>
+                    <input type="email" class="email" placeholder="Email" required id="email">
                 </div>
                 <div class="input-box">
                     <span class="fa fa-phone"></span>
-                    <input type="number" class="call" placeholder="Phone number" required>
+                    <input type="number" class="call" placeholder="Phone number" required id="call">
                 </div>
                 <div class="input-1">
                     <div class="submit">
-                           <input  type="submit" onclick="changeHandler()" value="Contact now" ></input>
+                           <button  type="submit"  value="Contact now" >Contact now</button>
                      </div>
                 </div>
             </form>

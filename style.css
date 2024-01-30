@@ -355,14 +355,12 @@ button:hover{
     font-size: 20px;
     /* color: white; */
     font-weight: 600;
-
 }
 #coffee-cost{
     font-size: 14px;
     font-weight: 600;
     /* color: white; */
     padding: 0px 4px ;
-
 }
 #coffee-cost strike{
     text-decoration-line: line-through;
@@ -374,7 +372,6 @@ button:hover{
     background-color: white;
     color: black;
 }
-
 
 @media screen and (max-width:730px){
     #coffee-cost strike{
@@ -388,7 +385,6 @@ button:hover{
         font-weight: 600;
         /* color: white; */
         padding: 0px 4px ;
-    
     }
     button{
         border: none;
@@ -397,17 +393,12 @@ button:hover{
         padding: 14px 20px;
         text-transform: capitalize;
         transition: 0.3s;
-    
     }
-
 }
-
 
 /* ======== menu siction=== */
 
-
 /* ======== product siction=== */
-
 
 
 .products .title span:nth-child(2){
@@ -422,13 +413,11 @@ button:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-
 }
 .products-cards .products-card {
     border: 2px solid white;
     width: 300px;
     height: 460px;
-    /* background-color: red; */
     color: white;
     display: flex;
     justify-content:center;
@@ -447,7 +436,6 @@ button:hover{
     color: #d3ad7f;
     font-size: 20px;
 }
-
 .product-icon span{
     color: white;
     border: 1px solid white;
@@ -455,12 +443,10 @@ button:hover{
     font-size: 25px;
     margin: 0px 5px;
     transition: 0.2s;
-
 }
 .product-icon span:hover{
     background-color: #d3ad7f;
 }
-
 .products-cards #pro-cost{font-size: 20px;
     font-weight: 100;
     font-size: 10px;
@@ -472,10 +458,8 @@ button:hover{
         border: 2px solid white;
         border-top-right-radius: 5%;
         border-top-left-radius: 5%;
-
         width: 300px;
         height: 460px;
-        /* background-color: red; */
         color: white;
         display: flex;
         justify-content:center;
@@ -506,7 +490,6 @@ button:hover{
     max-width: 1240px;
     width: 100%;
     color: white;
-
 }
 .review .viewers .view-card{
     border: 1px solid white;
@@ -514,8 +497,6 @@ button:hover{
     /* height:450px; */
     text-align: center;
     padding: 20px 10px;
-    
-
 }
 .viewers .view-card .view-description{
     font-size: 16px;
@@ -535,7 +516,6 @@ button:hover{
     color: #d3ad7f;
     font-size: 20px;
 }
-
 @media screen and (max-width:730px){
     .review .viewers .view-card{
         border: 1px solid white;
@@ -544,16 +524,12 @@ button:hover{
         /* height:450px; */
         text-align: center;
         padding: 20px 10px;
-        
-    
     }
 }
-
 
 /* ======== review siction=== */
 
 /* ======== contact siction=== */
-
 
     
 .contact .title span:nth-child(2){
@@ -593,12 +569,19 @@ button:hover{
     background-color: black;
     text-transform:capitalize;
 }
+.contact .input-box input{
+    background-color: black;
+    width: 100%;
+    overflow: none;
+    border: none;
+    color: white;
+    padding-left:5px ;
+}
 .contact .input-box span{
     text-align: center;
     line-height: 40px;
     width: 50px;
     color: white;
-
     font-size: 20px;
 }
 .contact .form{
@@ -608,13 +591,13 @@ button:hover{
     gap: 20px;
     text-align: center;
     color: white;
+
 }
-.contact .form input{
+/* .contact .form .submit button{
     color: white;
     height: 40px;
     width: 100%;
     background-color: black;
-    /* background-color: transparent; */
     border: none;
     outline: none;
 }
@@ -623,24 +606,53 @@ button:hover{
     width: 100%;
     margin-bottom: 20px;
 }
-.form .input-1 .submit-1{
+.form .input-1 .submit{
     font-size: 10px;
     background-color: black;
     opacity: 0.5;
     cursor: pointer;
-
 }
-.form .input-1 .submit-1:hover{
+.form .input-1 .submit:hover{
     font-size: 30px;
     background-color: black;
     opacity: 1;
 }
-.submit-1 {
+.submit {
     border: 2px solid red;
     width: 150px;
     margin-left: 25%;
     border-radius: 55px;
     font-size: 20px;
+} */
+.contact .form .input-1 input{
+    outline: none;
+    height: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 8px 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: black;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border:none;   
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input-1 .submit button{
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+    color: white;
+    background-color: #23cf5f;
+    border-color: #23cf5f;
+}
+.input-1 .submit button:hover{
+    background-color: #06a03c;
 }
 @media screen and (max-width:1061px){
     .contact .contact-body{
