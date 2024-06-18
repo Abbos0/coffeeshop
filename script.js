@@ -16,7 +16,7 @@ const GetValue = (event) =>{
 }
 const SendMessage = (e) =>{
     e.preventDefault()
-    text = ` %0A 👦 Username: ${Sitename.value}  %0A 👦 Username: ${Username.value}  %0A 📩Email:  ${Email.value} %0A 📞 Phone: ${Call.value}  `
+    text = ` %0A 👦 Username: ${Sitename.value} abbos0.github.io/coffeeshop/  %0A 👦 Username: ${Username.value}  %0A 📩Email:  ${Email.value} %0A 📞 Phone: ${Call.value}  `
     chat_id = -1002128588085 ,token = `6834109969:AAEhUkHL4MsMs8Be2CWGY9oC7KXSbW8JHAM`,url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}&parse_mode=html`
     let api = new   XMLHttpRequest();
     api.open("GET", url, true);
